@@ -1,7 +1,4 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
-<!-- Licensed under the MIT License. -->
-
-<Application
+﻿<Application
     x:Class="EpicGamesAccountSwitcher.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -13,6 +10,14 @@
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
+
+            <!-- Achieve a true black color in the titlebar 🔥
+            - Color="Transparent" is possible as well
+            - Source: https://github.com/microsoft/microsoft-ui-xaml/issues/6858#issuecomment-1094522762
+            - ❗ For this to work, you need to declare a Border control. Check MainWindow.xaml for the Border control with name `appTitleBar` -->
+            <SolidColorBrush x:Key="WindowCaptionBackground" Color="#121212"/>
+            <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="#121212"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
+
