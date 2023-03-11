@@ -1,4 +1,4 @@
-<Window
+﻿<Window
     x:Class="EpicGamesAccountSwitcher.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -11,5 +11,17 @@
         <Border x:Name="appTitleBar" VerticalAlignment="Top">
             <TextBlock Margin="0,30,0,0" VerticalAlignment="Top" />
         </Border>
+        <TextBlock Text="Epic Games Account Switcher" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" TextWrapping="Wrap" Foreground="#FFD2D2D2" FontSize="12"/>
+
+        <TextBlock Text="Currently Logged In:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,80,0,0" TextWrapping="Wrap"  Foreground="#FFD2D2D2" FontSize="20"/>
+
+        <TextBlock Text="Makima Ma Duże" x:Name="accountIdTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="290,82,0,0" TextWrapping="Wrap" FontSize="17" Foreground="#BB86FC" FontWeight="Bold"/>
+
+        <TextBlock Text="Other accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,125,0,0" TextWrapping="Wrap" Foreground="#FFD2D2D2" FontSize="18"/>
+
+        <ListBox x:Name="accountListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,155,0,0" Padding="4" Width="275"/>
+
+        <Button Content="Switch" x:Name="changeAccountButton" Click="ChangeAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,270,0,0"/>
+        <Button Content="Add" Click="NewAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,270,0,0"/>
     </Grid>
 </Window>
