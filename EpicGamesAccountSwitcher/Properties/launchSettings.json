@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EpicGamesAccountSwitcher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "EpicGamesAccountSwitcher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
