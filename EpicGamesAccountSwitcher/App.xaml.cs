@@ -4,12 +4,14 @@ namespace EpicGamesAccountSwitcher
 {
     public partial class App : Application
     {
+        private Window m_window;
+
         public App()
         {
             InitializeComponent();
         }
 
-        protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
+        protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
             // This code opens the MainWindow always in the center of the display 🔥
             // Source: https://stackoverflow.com/a/71730765/12308353
@@ -31,8 +33,5 @@ namespace EpicGamesAccountSwitcher
             }
             m_window.Activate();
         }
-
-        private Window m_window;
     }
 }
-

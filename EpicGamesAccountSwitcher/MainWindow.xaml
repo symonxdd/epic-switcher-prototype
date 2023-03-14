@@ -13,15 +13,19 @@
         </Border>
         <TextBlock Text="Epic Games Account Switcher" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" TextWrapping="Wrap" Foreground="#FFD2D2D2" FontSize="12"/>
 
-        <TextBlock Text="Currently Logged In:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,80,0,0" TextWrapping="Wrap"  Foreground="#FFD2D2D2" FontSize="20"/>
+        <TextBlock x:Name="noAccountsWarningTextBlock" Text="Add an account first... Use the Add button below ⚠️" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" TextWrapping="Wrap" Foreground="#717171" FontSize="15" FontFamily="Nunito"/>
 
-        <TextBlock Text="Makima Ma Duże" x:Name="accountIdTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="290,82,0,0" TextWrapping="Wrap" FontSize="17" Foreground="#BB86FC" FontWeight="Bold"/>
+        <TextBlock Text="Signed in with" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,80,0,0" TextWrapping="Wrap" Foreground="#D2D2D2" FontSize="17" FontFamily="Nunito"/>
+        <TextBlock Text="Makima Ma Duże" x:Name="accountIdTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="214,81,0,0" TextWrapping="Wrap" FontSize="15" Foreground="#BB86FC" FontWeight="Bold" FontFamily="Nunito"/>
 
-        <TextBlock Text="Other accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,125,0,0" TextWrapping="Wrap" Foreground="#FFD2D2D2" FontSize="18"/>
+        <TextBlock Text="Available accounts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,125,0,0" TextWrapping="Wrap" Foreground="#D2D2D2" FontSize="17" FontFamily="Nunito"/>
+        <TextBlock x:Name="accountsCountTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="245,129,0,0" Foreground="#D2D2D2" FontSize="12" FontFamily="Nunito"></TextBlock>
 
-        <ListBox x:Name="accountListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,155,0,0" Padding="4" Width="275"/>
+        <ComboBox x:Name="accountsComboBox" Margin="100,155,0,0" Width="255" SelectionChanged="AccountsComboBox_SelectionChanged"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!--<ListBox x:Name="accountListBox" SelectionChanged="AccountListBox_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,155,0,0" Padding="4" Width="275"/>-->
 
-        <Button Content="Switch" x:Name="changeAccountButton" Click="ChangeAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,270,0,0"/>
-        <Button Content="Add" Click="NewAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,270,0,0"/>
+
+        <Button Content="Switch" x:Name="switchAccountButton" Click="SwitchAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,210,0,0"/>
+        <Button Content="Add" Click="NewAccountButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,210,0,0"/>
     </Grid>
 </Window>

@@ -17,6 +17,8 @@
             - ❗ For this to work, you need to declare a Border control. Check MainWindow.xaml for the Border control with name `appTitleBar` -->
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="#121212"/>
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="#121212"/>
+
+            <FontFamily x:Key="ContentControlThemeFontFamily">/Assets/Nunito-Regular.ttf#Nunito</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -5,15 +5,17 @@
 		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
 		<RootNamespace>EpicGamesAccountSwitcher</RootNamespace>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
-		<Platforms>x86;x64;ARM64</Platforms>
-		<RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
-		<PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+		<Platforms>x64</Platforms>
+		<RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
 		<UseWinUI>true</UseWinUI>
-		<EnableMsixTooling>true</EnableMsixTooling>
-		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>		
+		<EnableMsixTooling>true</EnableMsixTooling>		
+		<WindowsPackageType>None</WindowsPackageType>		
+		<ApplicationIcon>Assets\app_logo.ico</ApplicationIcon>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Content Include="Assets\app_logo.ico" />
 		<Content Include="Assets\SplashScreen.scale-200.png" />
 		<Content Include="Assets\LockScreenLogo.scale-200.png" />
 		<Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -38,9 +40,9 @@
 		<ProjectCapability Include="Msix" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Reference Include="RegistryUtils">
-	    <HintPath>RegistryUtils.dll</HintPath>
-	  </Reference>
+		<Reference Include="RegistryUtils">
+			<HintPath>RegistryUtils.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 
 	<!-- 
@@ -52,4 +54,3 @@
 		<HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
 	</PropertyGroup>
 </Project>
-
