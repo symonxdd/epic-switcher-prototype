@@ -1,5 +1,5 @@
-# Epic Games Account Switcher 🔥
-Easily switch between your Epic Games accounts - in a simple, clean & modern native app.
+# Epic Switcher 🔥
+Easily switch between your Epic Games accounts.
 
 ## Screenshots
 
