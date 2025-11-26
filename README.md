@@ -1,6 +1,13 @@
 # Epic Switcher 🔥
 Easily switch between your Epic Games accounts.
 
+<br/>
+
+> ⚠️ **This is the early C# prototype of Epic Switcher.**  
+> The actively maintained version is available at [symonxdd/epic-switcher](https://github.com/symonxdd/epic-switcher)
+
+<br/>
+
 ## Screenshots
 
 **Main Screen**  
